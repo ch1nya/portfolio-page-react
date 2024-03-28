@@ -43,7 +43,7 @@ function App() {
           <TransitionGroup>
             <CSSTransition key={location.key} classNames="fade" timeout={500}>
               <Routes location={location}>
-                <Route path="/" element={<Home />} />
+                <Route path="/portfolio-page-react/" element={<Home />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/Project" element={<Project />} />
                 <Route path="/Contact" element={<Contact />} />
