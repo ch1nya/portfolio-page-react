@@ -1,6 +1,7 @@
 import React, {useRef, useState} from "react";
 import { FaCheck } from "react-icons/fa";
 import * as emailjs from "@emailjs/browser";
+import {publicKey, serviceId, templateId} from "../api";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,9 +24,9 @@ const Contact = () => {
       e.preventDefault();
       emailjs
           .sendForm(
-              {serviceId},
-              {templateId},
-              e.target, {publicKey: {publicKey}})
+              serviceId,
+              templateId,
+              e.target, {publicKey: publicKey})
           .then(
               (result) => {
                   console.log(result.text);
