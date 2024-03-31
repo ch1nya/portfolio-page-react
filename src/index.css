@@ -434,7 +434,20 @@ button:hover {
   width: 100%;
   margin: 0px 0px;
 }
+@media (max-width: 500px) {
+  .projectHeading {
 
+  }
+
+  .project {
+    width: 65vw;
+    margin: auto;
+  }
+
+  .projectBox {
+
+  }
+}
 /* FOOTER */
 
 footer {

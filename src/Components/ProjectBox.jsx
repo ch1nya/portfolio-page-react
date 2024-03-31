@@ -16,9 +16,14 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     ProjectsInProgressWebsite: "https://ch1nya.github.io",
 
     QrCodeGeneratorDesc:
-        "Other projects are going to uploaded soon",
+        "Put your link and get a QR code",
     QrCodeGeneratorGithub: "https://github.com/ch1nya/qr_code_generator_react",
     QrCodeGeneratorWebsite: "https://ch1nya.github.io/qr_code_generator_react",
+
+    AiAssistantDesc:
+        "Connect your ChatGPT key and use your and assistant that responds with  short and straight-to-the-point responses",
+    AiAssistantGithub: "https://github.com/ch1nya/ai-assitant",
+    AiAssistantWebsite: "https://ch1nya.github.io/ai-assitant/",
   };
 
   return (
