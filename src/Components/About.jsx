@@ -12,7 +12,7 @@ const About = () => {
           <p>
             My name is <b>Chiniakin Ivan</b> and I am a <b>Front-end developer</b> from Saint-Petersburg (Russia).
             I love to create projects with <b>minimalistic</b> designs and put my own
-            twists on it, you can check out some of my work in the projects
+            twists on it, you may check out some of my work in the projects
             section.
             <br />
             <br />I am <b>open</b> to new collaborations where I can

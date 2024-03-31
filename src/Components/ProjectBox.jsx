@@ -5,15 +5,20 @@ import inProgress from "../images/in progress.png";
 
 const ProjectBox = ({ projectPhoto, projectName }) => {
   const desc = {
-    Colour_PaletteDesc:
-      "This website lets you generate random colours that you can use as a palette in your projects",
+    ColourPaletteDesc:
+      "Generate random colours that you can use as a palette in your projects",
     ColourPaletteGithub: "https://github.com/ch1nya/Color_palette_generator",
     ColourPaletteWebsite: "https://ch1nya.github.io/Color_palette_generator/",
 
-    Projects_in_progressDesc:
+    ProjectsInProgressDesc:
         "Other projects are going to uploaded soon",
-    inProgressGithub: "https://github.com/ch1nya",
-    inProgressWebsite: "https://ch1nya.github.io",
+    ProjectsInProgressGithub: "https://github.com/ch1nya",
+    ProjectsInProgressWebsite: "https://ch1nya.github.io",
+
+    QrCodeGeneratorDesc:
+        "Other projects are going to uploaded soon",
+    QrCodeGeneratorGithub: "https://github.com/ch1nya/qr_code_generator_react",
+    QrCodeGeneratorWebsite: "https://ch1nya.github.io/qr_code_generator_react",
   };
 
   return (
