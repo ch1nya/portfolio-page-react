@@ -17,8 +17,8 @@ body {
   /*  #cbcbd0 0%,*/
   /*  #2f333b 100%*/
   /*);*/
-  /*color: #e7e7e7;*/
-  /*min-height: 100vh;*/
+  color: rgba(0, 0, 0, 0.53);
+  min-height: 100vh;
   background-color:#fff;
 }
 
@@ -63,11 +63,11 @@ button:hover {
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar-track {
-  background: #274656;
+  background: #ffffff;
   border-radius: 100px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #01111a;
+  background: #000000;
   border-radius: 100px;
 }
 
@@ -162,7 +162,7 @@ button:hover {
     position: fixed;
     inset: 0 0 0 50%;
     gap: 50px;
-    background-color: #0c2f69;
+    background-color: rgba(255, 255, 255, 0.96);
     height: 100vh;
     padding-top: max(20%, 120px);
     transform: translateX(100%);
@@ -237,7 +237,7 @@ button:hover {
   mix-blend-mode: screen;
 }
 
-@media (max-width: 900px) {
+@media  (max-width: 900px) {
   .HomePage {
     display: block;
     text-align: center;
@@ -248,11 +248,21 @@ button:hover {
     text-align: left;
     display: inline-block;
   }
+  .Avatar {
+    height: 20vh;
+    width: auto;
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 500px) {
   .HomePage {
-    min-height: 70vh;
+    min-height: 60vh;
+  }
+  .Avatar {
+    height: 20vh;
+    width: auto;
+    margin-top: 2rem;
   }
   .NavbarLinks {
     inset: 0 0 0 30%;
@@ -260,10 +270,20 @@ button:hover {
   .HomeText h1 {
     font-weight: 500;
     font-size: 28px;
+
   }
   .TypeEffect {
     font-weight: 500;
     font-size: 24px;
+  }
+  .HomeButtons{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  .HomeButtons button{
+    width:fit-content;
   }
 }
 

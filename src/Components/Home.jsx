@@ -13,20 +13,22 @@ const Home = () => {
             I'm <b>Chiniakin Ivan</b>
           </h1>
           <Type />
-          <Link to="/About">
-            <button>
-              About Me
-            </button>
-          </Link>
+          <div className='HomeButtons'>
+            <Link to="/About">
+              <button>
+                About Me
+              </button>
+            </Link>
+            <Link to="/Contact">
+              <button>
+                Contact
+              </button>
+            </Link>
+          </div>
 
-          <Link to="/Contact">
-            <button>
-              Contact
-            </button>
-          </Link>
         </div>
         <Tilt tiltMaxAngleX='5' tiltMaxAngleY='15'>
-          <img className="Avatar" style={{width:"auto",height:'40rem'}} src={Avatar} alt="" />
+          <img className="Avatar" src={Avatar} alt="" />
         </Tilt>
       </div>
     </div>
