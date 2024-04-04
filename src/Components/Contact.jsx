@@ -44,7 +44,7 @@ const Contact = () => {
         {submitted ? (
             <p className="submitted-message" >Form has been submitted!</p>
         ) : (
-            <form onSubmit={sendEmail}>
+            <form className="form-group" onSubmit={sendEmail}>
               <div className="form-group">
                 <label htmlFor="name">Name:</label>
                 <input
@@ -76,12 +76,15 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                 />
+                  <div className='submit-btn-container'>
+                      <button type="submit" value="Send" className="submit-btn">
+                          {" "}
+                          Submit
+                          <FaCheck> </FaCheck>{" "}
+                      </button>
+                  </div>
               </div>
-              <button type="submit" value="Send" className="submit-btn">
-                {" "}
-                Submit
-                <FaCheck> </FaCheck>{" "}
-              </button>
+
             </form>
         )}
       </div>

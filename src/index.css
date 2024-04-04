@@ -511,18 +511,32 @@ footer h4 {
 
 .form-group {
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
+.submit-btn-container{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.submit-btn{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-width: fit-content;
+}
 .form-group label {
-  display: block;
+  display: flex;
   margin-bottom: 5px;
   color: black
 }
 
 .form-group input,
 .form-group textarea {
+  display: flex;
   width: 100%;
-  padding: 10px;
+  padding: 10px 0px;
   border: none;
   border-radius: 5px;
   border: black solid 1px;
