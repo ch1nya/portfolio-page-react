@@ -7,7 +7,6 @@ const Footer = () => {
   let year = date.getFullYear();
   return (
     <footer style={{height:"1.5rem", }}>
-      {/*<h4>Copyright &copy; {year} | All Rights Reserved</h4>*/}
       <div className="footerLinks">
         <a style={{height:"3rem"}} href="https://github.com/ch1nya" target="_blank">
           <FaGithub />

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import {Link, useLocation, useNavigate} from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsPerson, BsCodeSlash } from "react-icons/bs";
 import { CgPhone } from "react-icons/cg";
@@ -39,16 +39,21 @@ const Nav = () => {
 
   window.addEventListener("scroll", scrollHandler);
 
+  const navigate = useNavigate('/')
+
+  const handleLogoClick= () =>{
+    navigate('/')
+  }
   return (
     <nav className={navbarblur ? "Navbar blur" : "Navbar"}>
-      <h1
+      <a
         title="Reload"
-        onClick={() => window.location.reload(true)}
+        onClick={() =>handleLogoClick()}
         className="Logo"
       >
         <img src={logo} style={{width:"4rem"}}></img>
         {/*//TODO replace with real pic*/}
-      </h1>
+      </a>
 
       <div className="Hamburger" onClick={showMenu}>
         <span className="bar"></span>
